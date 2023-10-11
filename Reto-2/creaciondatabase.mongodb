@@ -1,0 +1,57 @@
+//Creamos una base de datos:
+use("delincuencia");
+
+//Creamos la colección "criminales":
+db.createCollection("criminales");
+
+//Creamos de una lista de documentos:
+const documentos = [{
+                        "_id":1,
+                        'nombre': 'AARON', 
+                        'apellidos':'WILLIAMS-BANKS', 
+                        'cuadra': '072XX S SOUTH SHORE DR', 
+                        'delitos': ['agresión sexual', 'robo con violencia'], 
+                        'estatura': 185, 
+                        'peso': 80,
+                        'f_nacimiento': new Date('1976-03-01T08:00:00Z')
+                    },
+                    {   "_id":2,
+                        'nombre': 'Felipe', 
+                        'apellidos': 'Magallanes', 
+                        'cuadra_1': '043XX S WOOD ST', 
+                        'delitos': 'Maltrato doméstico', 
+                        'estatura': 180, 
+                        'peso': 80,
+                        'f_nacimiento': new Date('1975-03-01T09:00:00Z') 
+                    },
+                    {   "_id":3,
+                        'nombre': 'Andrea', 
+                        'apellidos': 'Souto', 
+                        'cuadra_2': '035XX W BARRY AVE', 
+                        'delitos':'Tráfico de drogas', 
+                        'estatura': 173, 
+                        'peso': 70,
+                        'f_nacimiento': new Date('1990-01-01T13:00:00Z') 
+                    },
+                    {   "_id":4,
+                        'nombre': 'Pablo', 
+                        'apellidos': 'Londri', 
+                        'cuadra_3': '082XX S LOOMIS BLVD', 
+                        'delitos': 'Robo en casa', 
+                        'estatura': 190, 
+                        'peso': 90,
+                        'f_nacimiento': new Date('1991-08-12T19:20:10Z') 
+                    },
+                    {   "_id":5,
+                        'nombre': 'Gianela', 
+                        'apellidos': 'Zarate', 
+                        'cuadra_4': '071XX S PULASKI RD', 
+                        'delitos': 'Robo menor a $500', 
+                        'estatura': 168, 
+                        'peso': 78.3,
+                        'f_nacimiento': new Date('1989-05-04T13:00:00Z') 
+                    }]
+
+
+// Agregamos los 5 documentos solicitados:                  
+db.criminales.insertMany(documentos);

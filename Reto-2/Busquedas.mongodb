@@ -1,0 +1,26 @@
+// EJERCICIO 1:
+//Busqueda comprendida entre dos fechas de nacimiento: 
+
+use("delincuencia")
+db.criminales.find({ 
+    f_nacimiento: { 
+        $gt: new Date('1975-01-01T01:00:00Z'), 
+        $lt: new Date('1982-01-01T01:00:00Z')}
+  })
+
+
+//EJERCICIO 2:
+//Criminales acusados de robo con violencia
+
+use("delincuencia")
+db.criminales.find({ delitos: "robo con violencia" })
+
+
+//EJERCICIO 3:
+//Criminales con estatura menor a 180 y peso mayor a 75:
+
+use("delincuencia")
+db.criminales.find({ 
+    estatura: { $lt: 180 }, 
+    peso: { $gt: 75 } 
+  })
