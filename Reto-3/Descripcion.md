@@ -27,6 +27,7 @@ Las variables disponibles en el dataset son las siguientes:
 En esta fase, nos enfocaremos en las siguientes tareas cruciales:
 
 * **Cargar los datos de `estadisticas_community_areas.csv`.**
+  
     * Se debe realizar una correcta exploración y limpieza de los datos, siguiendo todos los pasos vistos en clase.
     
        * ¿Tiene sentido cambiar el tipo de dato de alguna variable?
@@ -35,6 +36,7 @@ En esta fase, nos enfocaremos en las siguientes tareas cruciales:
        * ¿Se observa algo atípico al graficar las variables?
 
 * **Plantear un modelo predictivo que prediga el índice de criminalidad en la ciudad de Chicago.**
+  
     * Identificar el tipo de problema analítico que se presenta.
     * Antes de ejecutar el algoritmo, estudiar la correlación entre las variables.
       
@@ -43,6 +45,7 @@ En esta fase, nos enfocaremos en las siguientes tareas cruciales:
        * Validar el modelo utilizando distintas métricas de error
 
 * **Cargar el fichero `Delitos_Chicago.csv`.**
+  
     * Plantear un modelo predictivo que prediga si un delito es doméstico o no doméstico. Para ello, considerar la variable Domestic como variable objetivo.
 
        * Identificar el tipo de modelo predictivo al que se enfrentan.
@@ -51,5 +54,6 @@ En esta fase, nos enfocaremos en las siguientes tareas cruciales:
        * Evaluar el error cometido tras el desarrollo del modelo utilizando las métricas adecuadas.   
 
 * **Plantear una segmentación analítica de delitos atendiendo a sus características.**
+  
        * ¿Cuántos segmentos tiene la solución planteada?
        * ¿Qué características tienen los delitos de cada segmento?
